@@ -8,5 +8,13 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
 
-    public List<User> selectUsers();
+    List<User> selectUsers();
+
+    int insert(User account);
+
+    int delete(String value);
+
+    int update(User user);
+
+    List<User> selectUsersByQuery(User user);
 }
